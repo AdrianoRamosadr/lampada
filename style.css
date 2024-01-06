@@ -1,0 +1,67 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+ 
+}
+
+div#res{
+    display: flex;
+    justify-content: center;
+}
+img{
+    margin-bottom: 30px;
+}
+
+div#container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    padding: 9px;
+    margin: 5px;
+
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    transition: 0.25s;
+    font-size: 15px;
+    font-weight: bold;
+    font-variant: small-caps;
+    cursor: pointer;
+}
+
+button#ligar:hover{
+    background-color: gold;
+    transform: scale(1.1);
+}
+
+button#desligar:hover{
+    transform: scale(1.1);
+    background-color: lightgray;
+}
+
+button#piscar:hover{
+    transform: scale(1.1);
+   background-color: darkgrey;
+}
+
+@media screen and (min-width:300px) and (max-width:500px){
+    div#container{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    button#piscar{
+        display: none;
+    }
+
+}
